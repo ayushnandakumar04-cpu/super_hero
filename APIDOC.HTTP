@@ -1,0 +1,54 @@
+#Api call for list
+###
+
+GET http://127.0.0.1:8000/hero/
+Accept: application/json
+
+#Api call for add
+###
+
+POST http://127.0.0.1:8000/hero/
+Content-Type: application/json
+
+{
+    "name":"Spider-Man",
+    "power":"Web and Spider Sense",
+    "city":"New York",
+    "age":25,
+    "team":"Avengers",
+    "real_name":"Peter Parker"
+}
+
+# api call for retrieve
+###
+
+GET  http://127.0.0.1:8000/hero/7
+Accept: application/json
+
+#api call for delete
+###
+
+DELETE http://127.0.0.1:8000/hero/4
+Content-Type: application/json
+
+{
+    "id":4
+}
+
+#api call for update
+###
+
+PUT http://127.0.0.1:8000/hero/2/
+Content-Type: application/json
+
+{         
+            "id":2,
+             "name":"Iron Man",
+             "power":"Technology",
+             "city":"New York",
+             "age":40,
+             "team":"Avengers",
+             "real_name":"Tony Stark"
+              
+           
+}
