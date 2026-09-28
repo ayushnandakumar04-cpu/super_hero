@@ -28,11 +28,11 @@ Accept: application/json
 #api call for delete
 ###
 
-DELETE http://127.0.0.1:8000/hero/4
+DELETE http://127.0.0.1:8000/hero/10
 Content-Type: application/json
 
 {
-    "id":4
+    "id":10
 }
 
 #api call for update
@@ -52,3 +52,30 @@ Content-Type: application/json
               
            
 }
+
+#
+###
+
+GET http://127.0.0.1:8000/v2/hero
+Accept: application/json
+
+#
+###
+
+POST  http://127.0.0.1:8000/v2/hero
+Content-Type: application/json
+
+{
+    "name":"Power_Ranges",
+    "power":"morphers",
+    "team":"Angel Grove",
+    "city":"California",
+    "age":40,
+    "real_name":"Zack Taylor"
+}
+
+#
+###
+
+GET http://127.0.0.1:8000/v2/hero/10
+Accept: application/json

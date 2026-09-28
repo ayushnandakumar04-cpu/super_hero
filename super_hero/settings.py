@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'batman',
+    'batman_v2',
 ]
 
 MIDDLEWARE = [

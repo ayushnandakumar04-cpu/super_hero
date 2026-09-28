@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hero/',SuperheroListCreateView.as_view()),
     path('hero/<int:pk>/',SuperheroListRetrieveView.as_view()),
+    path('v2/hero',SuperheroListCreateView.as_view()),
+    path('v2/hero/<int:pk>',SuperheroListRetrieveView.as_view())
 ]
